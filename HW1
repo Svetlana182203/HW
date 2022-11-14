@@ -1,0 +1,61 @@
+Задача 1 
+a=int(ввод ())
+b=int(ввод())
+c=b//a
+print(c,b-(a*c)) 
+
+Задача 2 
+a=int(input))
+b=str(a//100)
+c=str(a//10%10)
+e=str(a%10)
+print(b+c+e,b+e+c,c+e+b,c+b+e,e+c+b,e+b+c,sep='\n')
+
+Задача 3 
+a=int(input))
+b=int(input))
+c=int(input))
+e=a+b+c
+f=e//60+10
+o=e%60
+print(f,':',o) 
+
+Задача 4 
+a=int(input))
+b=int(input))
+if a==b:
+    print('пароль принят!')
+else:
+    print('пароль не принят! введенные данные не совпадают')
+
+Задача 5 
+a=int(input))
+b=int(input))
+if a>b:
+    print(a, ' наибольшее число ' )
+    print(b, 'наименьшее число ' )
+else:
+    print(b, ' наибольшее число ' )
+    print(a, ' наименьшее число ' )
+
+Задача 6 
+a=int(input))
+if a<18:
+    print( ' доступ запрещен ' )
+else:
+    print( ' доступ разрешен ' )
+
+Задача 7 
+a=int(input))
+print(max(str(a)))
+
+Задача 8 
+a=0
+summ=0
+for i in range(4):
+    d=int(input))
+    if d%2!=0:
+        a+=1
+        summ+=d
+print( ' количество нечетных ' , a )
+print( ' сумма нечетных ' , summ)
