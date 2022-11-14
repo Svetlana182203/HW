@@ -1,0 +1,74 @@
+Задача 1 
+x=int(input())
+if 10 < x < 22 or 30 < x <40: 
+    print("Точка в множестве")
+else:
+    print("Точка вне множества")
+    
+Задача 2 
+x=int(input())
+y=int(input())
+if ((-5 < x <= 0 or 2 < x <=7) and (-5 < y <= 0 or 2 < y <=7)): 
+    print("Да")
+else:
+    print("Нет")
+    
+Задача 3 
+s=float(input())
+t=float(input())
+x=s/t
+if x<30:
+    print("Медленно")
+elif 30 <=x <= 60:
+    print("Средне")
+else:
+    print("Быстро")
+
+Задача 4
+a=int(input())
+b=int(input())
+c=int(input())
+if c-a==b:
+    print("интересное")
+else:
+    print("не интересное")
+
+Задача 5 
+a=str(input())
+if len(a)<3:
+    print('Ник-нейм должен состоять минимум из 3 символов!')
+elif len(a)>15:
+    print('Ник-нейм должен состоять максимум из 15 символов!')
+else:
+    print('Ник-нейм принят')
+    
+Задача 6 
+x = float(input())
+y = float(input())
+if x>0 and y>0:
+    print("Точка принадлежит первой четверти")
+    k = str(input("Введите две строки:"))
+    n = str(input())
+    print(min(k, n))
+elif x<0 and y>0:
+    print("Точка принадлежит второй четверти")
+    f = (2*abs(x)-y)//y**2
+    print(f)
+elif x<0 and y<0:
+    print("Точка принадлежит третьей четверти")
+    t = str(input("Введите строку:"))
+    w = (x*len(t)), (y*len(t))
+    print(w)
+elif x>0 and y<0:
+    print("Точка принадлежит четвертой четверти")
+    if abs(x)>abs(y):
+        print("Координата x - наибольшая по модулю")
+    elif abs(x)<abs(y):
+        print("Координата y - наибольшая по модулю")
+    elif abs(x)==abs(y):
+        print("Координаты равны по модулю")
+ 
+Задача 7 
+a = input()
+if "кот" in a:
+    print("Мы погладили кота!")
