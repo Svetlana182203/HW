@@ -1,0 +1,79 @@
+# Задача 1.
+
+N = int(input())
+acronym = ''
+for i in range(N):
+    word = str(input())
+    acronym = acronym + word[0]
+
+print(acronym.upper())
+
+
+# Задача 2.
+
+task_2 = str(input())
+print(len(task_2))
+print(task_2[0])
+print(task_2[-1])
+
+reversed_str = ''
+for letter in reversed(task_2):
+    reversed_str = reversed_str + letter
+print(reversed_str)
+
+odd = ''
+even = ''
+for i in range(len(task_2)):
+    if i % 2 == 0:
+        even = even + task_2[i]
+    else:
+        odd = odd + task_2[i]
+print(even)
+print(odd)
+
+
+# Задача 3.
+
+task_3 = str(input())
+alphabet_nums = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+q_count = 0
+indexes = ''
+if task_3.isalpha():
+    for i in range(len(task_3)):
+        if task_3[i].lower() == 'q':
+            q_count = q_count + 1
+    print(q_count)
+elif task_3.isdigit():
+    for i in range(len(task_3)):
+        num = int(task_3[i]) * 10
+        print(num)
+for i in range(len(task_3)):
+    if task_3[i] in alphabet_nums:
+        pass
+    else:
+        indexes = indexes + str(i) + ' '
+print(indexes)
+
+
+# Задача 4.
+
+alphabet_nums = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+stop_word = True
+while stop_word:
+    print('Задайте строку: ')
+    task_4 = str(input())
+    if task_4.lower() == 'stop':
+        stop_word = False
+    elif task_4.isdigit():
+        print('Цифровая строка')
+    elif task_4.isalpha():
+        print('Буквенная строка')
+    else:
+        spec_symbols = False
+        for i in range(len(task_4)):
+            if task_4[i] in alphabet_nums:
+                pass
+            else:
+                spec_symbols = True
+        if not spec_symbols:
+            print('Смешанная строка')
